@@ -43,7 +43,7 @@ class CardInfoLutBuilder(CardCombos):
         self.n_simulations_turn = n_simulations_turn
         self.n_simulations_flop = n_simulations_flop
         super().__init__(
-            low_card_rank, high_card_rank,
+            low_card_rank, high_card_rank, save_dir
         )
         self.card_info_lut_path: Path = Path(save_dir) / "card_info_lut.joblib"
         self.centroid_path: Path = Path(save_dir) / "centroids.joblib"
